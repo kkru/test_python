@@ -63,3 +63,25 @@ git config --global user.name "myname"
 --global
 : 전역적으로 설정한다. (다른 디렉토리, 작업영역에서도 지금 내가 설정한
 username과 user.email을 동일하게 사용하겠다.) 라는 뜻입니다.
+
+git remote add origin "url"
+인터넷을 연동해서 원격 저장소에다가 로컬에 있는 파일들(커밋내역들을 저장)
+
+remote : 원격 저장소에 어떤 설정을 할것이다.
+add : 원격 저장소 추가
+origin : 추가할 원격저장소의 이름
+url : 원격 저장소가 위치한 주소(url) 요기에다가 파일을 저장하겠다.
+
+url로 원격 저장소를 식별
+
+git push origin master
+
+push : 원격 저장소에 커밋 내용을 동기화시킨다.(저장한다.)
+origin : push할 원격 저장소의 이름
+master : 그저장소의 어떤 브랜치에 변경내역을 저장할건지 (기본은 master)
+
+내가 push를 해서 원격 저장소에 변경내역을 저장했다.
+
+다른 컴퓨터의 사용자는 해당 변경내역을 어떻게 최신화 할까요??
+
+git pull 
